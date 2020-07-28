@@ -384,6 +384,9 @@
 
 // Matt's code:
 
+
+
+
 const { Client } = require('pg') // imports the pg module
 
 const client = new Client('postgres://localhost:5432/juicebox-dev');
@@ -449,6 +452,8 @@ async function getAllUsers() {
     throw error;
   }
 }
+
+
 
 async function getUserById(userId) {
   try {
@@ -721,5 +726,6 @@ module.exports = {
   createTags,
   getAllTags,
   createPostTag,
-  addTagsToPost
+  addTagsToPost,
+  
 }
